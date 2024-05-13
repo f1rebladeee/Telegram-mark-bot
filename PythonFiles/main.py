@@ -6,12 +6,12 @@ from datetime import datetime
 import psycopg2
 
 # Variables
-BASO_03_23_BD = psycopg2.connect(dbname='postgres', user='postgres', host='localhost', port='5432', password='1')
+BASO_03_23_BD = psycopg2.connect(dbname='postgres', user='postgres', host='localhost', port='5432', password='MY_PASSWORD')
 cursor = BASO_03_23_BD.cursor()
 link = 'https://t.me/ConsyyyBot'
 groups = []
 BASO_03_23 = open('TextFiles/BASO-03-23.txt', 'r').readlines()
-token = '6626509200:AAHbOZAM-dMXqEPhmJQcW_I1qaEJ4MF0orQ'
+token = 'MY_BOT_TOKEN'
 bot = TeleBot(token)
 admin_id = 647011387
 schedules = []
